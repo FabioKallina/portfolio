@@ -111,7 +111,7 @@ h2 {
     flex-direction: column;
     justify-content: flex-start;
     /* Aligns content to the top */
-    background-color:rgb(89, 187, 248);
+    background-color:rgb(164, 232, 255);
     color: black;
 }
 
@@ -148,7 +148,7 @@ h2 {
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
-    background-color: #333;
+    background-color: #000000;
     border-radius: 10px;
 }
 
