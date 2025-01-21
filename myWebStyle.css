@@ -111,7 +111,7 @@ h2 {
     flex-direction: column;
     justify-content: flex-start;
     /* Aligns content to the top */
-    background-color:blanchedalmond;
+    background-color:rgb(89, 187, 248);
     color: black;
 }
 
@@ -120,7 +120,7 @@ h2 {
     padding: 0;
     font-size: 1.5rem;
     text-align: left;
-    color: rgb(251, 198, 39)
+    color: rgb(251, 198, 39);
 }
 
 #projects h2 {
