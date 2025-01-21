@@ -1,5 +1,5 @@
 
-// This will make navbar/header section update to higlight the active link as you scroll
+// This will make navbar/header section update to higlight the active link as you scroll h
 const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll("section");
 let currentSection = "";
