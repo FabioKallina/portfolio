@@ -1,0 +1,65 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(27, 114, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    width: 80%;
+}
+
+#nutrition-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#nutrition-info h2 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+#nutrition-info p {
+    margin: 2px 0;
+    color: #555;
+    font-size: 1.3em;
+}
+
+#food-input {
+    font-size: 32px;
+    border: none;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#food-input::placeholder {
+    font-size: 23px;
+    border: none;
+    text-transform: capitalize;
+}
+
+button {
+    cursor: pointer;
+    font-size: 23px;
+    transition: 0.4s ease;
+    background-color: rgb(141, 233, 186);
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    color: #333;
+}
+
+button:hover {
+    background-color: rgb(27, 114, 69);
+    transform: 0.4s ease;
+    color: aliceblue;
+}

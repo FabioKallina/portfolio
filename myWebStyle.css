@@ -1,0 +1,399 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    /* Enables smooth scrolling between sections */
+}
+
+/* General styling for all sections */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Full viewport height */
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Home Section */
+#home {
+    background-image: url(IMG_5723.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-shadow: 0 0.05rem .5rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    height: 100vh;
+}
+
+#home p {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#home h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 4rem;
+}
+
+
+/* About Section */
+#about {
+    height: 100vh;
+    /* Full viewport height */
+    padding: 120px;
+    /* Add some padding to the top and sides */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Aligns content to the top */
+    color: aliceblue;
+    background-color: black;
+}
+
+#about h3 {
+    margin: 20px;
+    padding: 0;
+    font-size: 1.5rem;
+    text-align: left;
+    color: rgb(251, 198, 39);
+}
+
+h2 {
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-pic {
+    width: 150px;
+    /* Set the width of the image */
+    height: 200px;
+    /* Set the height to match for a perfect circle */
+    border-radius: 50%;
+    /* Make the image circular */
+    object-fit: cover;
+    /* Ensure the image covers the entire area without distortion */
+    border: 2px solid rgb(251, 198, 39);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a shadow for depth */
+    margin-top: 70px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    /* Hides the picture if it overflows on a smaller screen */
+}
+
+#about p {
+    display: block;
+    margin-inline-start: 100px;
+    margin-inline-end: 100px;
+    font-size: 20px;
+    margin-top: 50px;
+    line-height: 2;
+}
+
+/* Projects Section */
+#projects {
+    height: 100vh;
+    /* Full viewport height */
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Aligns content to the top */
+    background-color:blanchedalmond;
+    color: black;
+}
+
+#projects h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    text-align: left;
+    color: rgb(251, 198, 39)
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    width: 200px; /* Set width for squares */
+    height: 200px; /* Set height to match */
+    margin: 25px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.project:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    cursor: pointer;
+}
+
+/* Contact Section */
+#contact {
+    min-height: 60vh;
+    /* Full viewport height */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Aligns content to the top */
+    background-color: black;
+    color: aliceblue;
+}
+
+#contact h3 {
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: left;
+    color: rgb(251, 198, 39);
+
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 70px;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    font-size: 3.5rem;
+    color: aliceblue;
+    transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: rgb(251, 198, 39);
+}
+
+/* Navigation styles */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.header.scrolled {
+    background-color: #333;
+}
+
+.nav-masthead {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.nav-link {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-bottom: 0.25rem solid transparent;
+    transition: border-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: rgb(251, 198, 39);
+}
+
+.nav-link.active {
+    color: rgb(251, 198, 39);
+}
+
+.lead {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bgpicture {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    font-size: 1rem;
+    padding: 20px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: aliceblue;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: rgb(251, 198, 39);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 992px) {
+    .nav-masthead {
+        /* Stack navigation vertically */
+        align-items: center;
+        gap: 20px;
+    }
+
+    #about {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px;
+        margin: 5px;
+    }
+
+    .profile-pic {
+        width: 20%;
+        height: 50%;
+        /* Image takes up 20% of the width */
+    }
+
+    .project {
+        width:100px; /* Set width for squares */
+    height: 100px; /* Set height to match */
+    margin: 25px;
+    padding: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    background-color: #333;
+    border-radius: 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .nav-masthead {
+        /* Stack navigation vertically */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+        margin: 5px 0;
+    }
+
+    #about {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    #about p {
+        width: 80%;
+        /* Text takes up 80% of the width */
+        display: block;
+        margin-inline-start: 20px;
+        margin-inline-end: 20px;
+        margin-top: 0;
+        line-height: 1;
+    }
+
+    .profile-pic {
+        width: 20%;
+        /* Image takes up 20% of the width */
+    }
+
+    .project {
+        width: 80px; /* Set width for squares */
+    height: 80px; /* Set height to match */
+    margin: 25px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    background-color: #333;
+    border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .project {
+        width: 70px; /* Set width for squares */
+    height: 70px; /* Set height to match */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+}

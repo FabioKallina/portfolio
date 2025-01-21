@@ -1,0 +1,103 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:bisque;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: aliceblue;
+}
+
+.container {
+    background-color:rgb(25, 25, 25);
+    border-radius: 10px;
+    padding: 90px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 40px;
+
+}
+
+h2 {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+#input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    background-color: rgb(36, 178, 244);
+    color: aliceblue;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(108, 189, 232);
+    color: black;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+ul li {
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid aliceblue;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+ul li button {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+#task-list {
+    list-style-type: none; /* Removes bullets from the list */
+    padding: 0px; /* Removes default padding */
+    margin-bottom: 0px; /* Removes default margin */
+    font-size: 1.5rem;
+}
+
+#task-list id {
+    margin: 20px ; /* Adds space between tasks */
+    padding: 10px; /* Optional: add padding for visual clarity */
+    border: 1px solid #ddd; /* Optional: border for each task */
+    border-radius: 4px; /* Optional: rounded corners */
+    display: flex; /* Ensures content within the task is aligned */
+    justify-content: space-between; /* Separates task text and buttons */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 20px;
+}
