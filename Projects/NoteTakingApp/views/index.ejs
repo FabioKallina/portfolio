@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NotesNest Home</title>
+  <link href="/css/styles.css" rel="stylesheet">
+  <link href="/css/header.css" rel="stylesheet">
+</head>
+<body>
+  <%- include("partials/header") -%>
+
+  <div class="container">
+  <h1>Welcome to NotesNest</h1>
+  <h2>Capture your ideas. Stay organized. Anytime, anywhere.</h2>
+
+  <img src="/img/owl-note-taking.png" alt="Welcome Image" class="welcome-img">
+
+  <% if (authenticated) { %>
+    <a href="/notes" class="notes-btn">Your Notes</a>
+  <% } else { %>
+    <a href="/login" class="login">Log In</a>
+  <% } %>
+</div>
+
+<%- include("partials/footer"); %>
+
+<script src="/js/dark-mode.js"></script>
+</body>
+
+</html>

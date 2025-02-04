@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Note</title>
+    <link href="/css/note-editor.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+</head>
+<body>
+    <%- include("partials/header"); %>
+    
+    <main class="container">
+        <h1>Edit Note</h1>
+
+        <form action="/notes/<%= note._id %>?_method=PUT" method="POST" class="note-form">
+
+            <div class="form-content">
+                <!-- Hidden field to store the note ID -->
+                <input type="hidden" name="noteId" value="<%= note._id %>" />
+                <input 
+                    type="text" 
+                    name="title" 
+                    value="<%= note.title %>" 
+                    class="title" 
+                    placeholder="Title"
+                    required
+                />
+                <textarea 
+                    name="text" 
+                    class="text-area" 
+                    placeholder="Write your note..."
+                    required
+                ><%= note.text %></textarea>
+            </div>
+            
+            <div class="btn-container">   
+                <button type="submit" class="btn-save">Save Changes</button>
+            </div>
+
+        </form>
+
+            <!-- Form to delete the note -->
+        <form action="/notes/<%= note._id %>?_method=DELETE" method="POST" class="delete-form">
+            <div class="btn-container">
+                <button type="submit" class="btn-delete">Delete Note</button>
+            </div> 
+        </form>    
+
+    
+    </main>
+    
+    <%- include("partials/footer"); %>
+    
+<script src="/js/note-editor.js"></script>
+<script src="/js/dark-mode.js"></script>
+
+</body>
+</html>

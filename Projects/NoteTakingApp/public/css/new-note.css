@@ -1,0 +1,127 @@
+
+body {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.note-form {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+.title {
+
+    font-size: 1.5rem;
+    height: 50px;
+    font-weight: bold;
+    background-color: bisque;
+    border:hidden;
+    font-size: 30px;
+
+}
+
+.text-area {
+
+    height: 500px;
+    background-color: bisque;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+.btn-container {
+
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    background-color: bisque;
+
+}
+
+.btn-save {
+
+    cursor: pointer;
+    background-color: #333;
+    color: aliceblue;
+    padding: 16px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    
+}
+
+.btn-save:hover {
+
+    background-color: rgb(168, 224, 168);
+    color: black;
+}
+
+footer {
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Dark Mode */
+
+body.dark-mode .title {
+
+    font-size: 1.5rem;
+    height: 50px;
+    font-weight: bold;
+    background-color: #002048;
+    border:hidden;
+    color: aliceblue;
+}
+
+body.dark-mode .text-area {
+
+    height: 500px;
+    background-color: #002048;
+    resize: none;
+    color: aliceblue;
+
+}
+
+body.dark-mode .btn-save {
+
+    cursor: pointer;
+    background-color: rgb(168, 224, 168);
+    color: #002048;
+    padding: 16px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: auto;
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    
+}
+
+body.dark-mode .btn-save:hover {
+
+    background-color: aliceblue;
+    color: #002048;
+
+}
+
+body.dark-mode .btn-container {
+
+    background-color: #002048;
+
+}

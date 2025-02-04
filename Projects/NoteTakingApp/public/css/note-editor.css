@@ -1,0 +1,168 @@
+
+body {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+
+    font-size: 1.5rem;
+    height: 50px;
+    font-weight: bold;
+    background-color: bisque;
+    border:hidden;
+    font-size: 30px;
+}
+
+.text-area {
+
+    height: 500px;
+    background-color: bisque;
+    resize: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.btn-container {
+
+    margin-top: 10px;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+}
+
+.btn-save {
+
+    cursor: pointer;
+    background-color: #333;
+    color: aliceblue;
+    padding: 16px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: auto;
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    
+}
+
+.btn-save:hover {
+
+    background-color: rgb(168, 224, 168);
+    color: black;
+}
+
+.delete-form {
+
+    text-align: center;
+}
+
+.btn-delete {
+
+    cursor: pointer;
+    background-color: #333;
+    color: aliceblue;
+    padding: 16px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: auto;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.btn-delete:hover {
+
+    background-color: rgb(227, 158, 158);
+    color: black;
+}
+
+footer {
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Dark Mode */
+
+body.dark-mode .title {
+
+    font-size: 1.5rem;
+    height: 50px;
+    font-weight: bold;
+    background-color: #002048;
+    border:hidden;
+    color: aliceblue;
+}
+
+body.dark-mode .text-area {
+
+    height: 500px;
+    background-color: #002048;
+    resize: none;
+    color: aliceblue;
+
+}
+
+body.dark-mode .btn-save {
+
+    cursor: pointer;
+    background-color: rgb(168, 224, 168);
+    color: #002048;
+    padding: 16px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: auto;
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    
+}
+
+body.dark-mode .btn-save:hover {
+
+    background-color: aliceblue;
+    color: #002048;
+
+}
+
+body.dark-mode .btn-delete {
+
+    cursor: pointer;
+    background-color: #c76363;
+    color: aliceblue;
+    padding: 16px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: auto;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+
+}
+
+body.dark-mode .btn-delete:hover {
+
+    background-color: aliceblue;
+    color: #002048;
+
+}
+

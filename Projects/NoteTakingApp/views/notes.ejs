@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes</title>
+  <link href="/css/notes.css" rel="stylesheet">
+  <link href="/css/header.css" rel="stylesheet">
+  
+</head>
+<body>
+  <%- include("partials/header") %>
+  
+  <main class="notes-app">
+    <h1>Your Notes</h1>
+    
+    <!-- Button to Create a New Note -->
+    <div class="new-note-btn-container">
+      <a href="/notes/new" id="new-note-btn">+ Write a New Note</a>
+    </div>
+    
+    <!-- Notes List -->
+    <div class="notes-list">
+      <% if (notes.length > 0) { %>
+        <% notes.forEach(note => { %>
+          <a 
+            href="/notes/<%= note._id %>" 
+            class="note-card"
+          >
+            <h2 class="note-title"><%= note.title.substring(0, 80) %></h2>
+            <p class="note-text"><%= note.text.substring(0, 80) %>...</p>
+          </a>
+
+        <% }) %>
+      <% } else { %>
+        <p class="no-notes">No notes available. Start writing one!</p>
+      <% } %>
+    </div>
+  </main>
+  
+  <%- include("partials/footer") %>
+
+  <script src="/js/notes.js"></script>
+  <script src="/js/dark-mode.js"></script>
+</body>
+
+</html>
+

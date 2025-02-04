@@ -1,0 +1,229 @@
+
+header {
+    background-color: #333;
+    color: aliceblue;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+header .container {
+
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px
+
+}
+
+.logo {
+
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header a {
+
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: bisque;
+}
+
+.profile {
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 135px;
+}
+
+.profile-img {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.dropdown {
+
+    position: relative;
+    
+}
+
+.dropdown-menu {
+
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: black;
+    color: black;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 22px;
+    margin-right: 0px;
+    min-width: 150px;
+    z-index: 10;
+    text-align: center;
+
+
+}
+
+.dropdown-menu li {
+
+    padding: 10px;
+
+}
+
+.dropdown-menu li a {
+
+    color: aliceblue;
+    display: block;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.dropdown-menu li a:hover {
+
+    color: bisque;
+}
+
+.profile:hover .dropdown-menu {
+
+    display: block;
+}
+
+#mobile-menu-toggle {
+
+    display: none;
+    
+}
+
+/* Dark mode button */
+#dark-mode-toggle {
+
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    background-color: black;
+    border: none;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #002048;
+    color: rgb(0, 255, 170);
+}
+  
+body.dark-mode .dropdown-menu {
+    background: #002048;
+}
+  
+body.dark-mode #dark-mode-toggle {
+    color: rgb(0, 255, 170);
+    background-color: #002048;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    border: none;
+    font-family:Arial, Helvetica, sans-serif;
+    cursor: pointer;
+
+}
+  
+body.dark-mode #dark-mode-toggle:hover {
+    color: bisque;
+}
+
+#dark-mode-toggle:hover {
+    color: rgb(0, 255, 170);
+
+}
+
+body.dark-mode header {
+    background-color: #184275;
+    color: rgb(0, 255, 170);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 0;
+}
+
+body.dark-mode header .container {
+
+    background-color:#002048;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px
+}
+
+body.dark-mode .logo {
+
+    color: rgb(0, 255, 170);
+    text-decoration: none;
+}
+
+body.dark-mode header a {
+
+    color: rgb(0, 255, 170);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 2rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body.dark-mode header a:hover {
+    color: aliceblue;
+}
+
+body.dark-mode .profile-img {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+    border: 2px solid rgb(0, 255, 170);
+}
+
+body.dark-mode .dropdown-menu li a {
+
+    color: rgb(0, 255, 170);
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+  
+body.dark-mode .dropdown-menu li a:hover {
+  
+    color: aliceblue;
+}
+  
+body.dark-mode h1 {
+    color: aliceblue;
+}
+
+body.dark-mode footer {
+
+    color: rgb(0, 255, 170);
+
+}

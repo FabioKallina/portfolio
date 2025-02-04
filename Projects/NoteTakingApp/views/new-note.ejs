@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Note</title>
+    <link href="/css/new-note.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+</head>
+<body>
+    <%- include("partials/header"); %>
+    <main class="container">
+        <h1>New Note</h1>
+  <form action="/notes" method="POST" class="note-form">
+    <input type="text" name="title" placeholder="Title" required class="title" />
+    <textarea class="text-area" name="text" placeholder="Write your note..." required></textarea>
+
+    <div class="btn-container">
+        <button type="submit" class="btn-save">Save Note</button>
+    </div>
+  </form>
+    </main>
+
+    <%- include("partials/footer") -%>
+
+    <script src="/js/new-note.js"></script>
+    <script src="/js/dark-mode.js"></script>
+</body>
+</html>
