@@ -111,8 +111,9 @@ h2 {
     flex-direction: column;
     justify-content: flex-start;
     /* Aligns content to the top */
-    background-color:rgb(164, 232, 255);
+    background-color:rgb(91, 179, 251); /*rgb(164, 232, 255)*/
     color: black;
+    
 }
 
 #projects h3 {
@@ -377,14 +378,14 @@ footer {
 
 @media screen and (max-width: 572px) {
     .project {
-        width: 70px; /* Set width for squares */
+        width: 50px; /* Set width for squares */
     height: 70px; /* Set height to match */
     margin: 10px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
@@ -395,5 +396,13 @@ footer {
 h1 {
     font-size: 4rem;
     margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
 }
 }

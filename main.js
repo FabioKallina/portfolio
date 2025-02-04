@@ -69,3 +69,7 @@ document.getElementById("weather-app").addEventListener("click", function () {
   document.getElementById("toDo-list").addEventListener("click", function () {
     window.open("Projects/ToDoList/FrontEnd/index.html", "_blank");
   });
+
+  document.getElementById("notes-app").addEventListener("click", function () {
+    window.open("Projects/NoteTakingApp/Views/index.ejs", "_blank");
+  });
