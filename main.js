@@ -71,5 +71,5 @@ document.getElementById("weather-app").addEventListener("click", function () {
   });
 
   document.getElementById("notes-app").addEventListener("click", function () {
-    window.open("Projects/NoteTakingApp/Views/index.ejs", "_blank");
+    window.open("https://github.com/FabioKallina/NoteTakingApp", "_blank");
   });
